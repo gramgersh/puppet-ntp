@@ -1,7 +1,8 @@
 class ntp::params (
 )
 {
-    $ensure             = 'present'
+    $package_ensure     = 'present'
+    $package_name       = 'ntp'
     $service_ensure     = 'running'
     $service_enable     = true
     $service_hasstatus  = true

@@ -1,9 +1,9 @@
 class ntp::install (
-  String $package_name = $::ntp::package_name,
-  String $ensure       = $::ntp::ensure,
+  String $package_name   = $::ntp::package_name,
+  String $package_ensure = $::ntp::package_ensure,
 ) {
   package { 'ntp-package':
-    ensure => $ensure,
+    ensure => $package_ensure,
     name   => $package_name,
   }
 }
